@@ -30,10 +30,12 @@ public class Program {
 		}
 	}
 		//3. Capturar excessoes
+	
 	catch (IOException e) {
 		System.out.println("Error: " + e.getMessage());
 	}
 		//4. Finally para fechar os streamers
+	
 		finally {
 			try {
 				if (br != null) {
@@ -43,6 +45,8 @@ public class Program {
 					fr.close();
 				}
 			}
+		//5. Capturar excessões do fechamento dos streamers
+			
 			catch (IOException e) {
 				e.printStackTrace();
 			}
